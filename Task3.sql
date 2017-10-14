@@ -23,5 +23,5 @@ update test_schema.org_m
 set min_value = 50.0
 where org_id = 1 and metric_id = 1;
 
-insert into test_schema.audit(org_m_id, user_id, old_min_value, old_max_value, old_status, new_min_value, new_max_value, new_status)
-values (1, 1, 45.0, 75.0, 1, 50.0, 75.0, 1);
+insert into test_schema.audit(org_m_id, user_id, new_min_value, new_max_value, new_status)
+values (1, 1, 50.0, 75.0, 1);

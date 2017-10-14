@@ -36,9 +36,6 @@ create table test_schema.audit (
 	id serial primary key,
 	org_m_id bigint not null references test_schema.org_m (id),
 	user_id bigint not null references test_schema.users (id),
-	old_min_value float,
-	old_max_value float,
-	old_status varchar,
 	new_min_value float,
 	new_max_value float,
 	new_status varchar
