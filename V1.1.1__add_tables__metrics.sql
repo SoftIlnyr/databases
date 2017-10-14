@@ -38,10 +38,10 @@ create table test_schema.audit (
 	user_id bigint not null references test_schema.users (id),
 	old_min_value float,
 	old_max_value float,
-	old_status float,
+	old_status varchar,
 	new_min_value float,
 	new_max_value float,
-	new_status float
+	new_status varchar
 )
 	
 
